@@ -52,7 +52,7 @@ CREATE TABLE Utente (
         ON DELETE RESTRICT, -- una città non può essere cancellata se esistono utenti che vivono nella città
     FOREIGN KEY (idTeam) REFERENCES Team(id)
         ON UPDATE CASCADE
-        ON DELETE SET NULL ù
+        ON DELETE SET NULL
 );
 
 CREATE TABLE Possedere (
